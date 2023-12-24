@@ -1,27 +1,27 @@
 import 'dart:convert';
-import 'package:belajarsholat/model/model_bacaan.dart';
+import 'package:belajarsholat/model/model_niat.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
-class BacaanSholat extends StatefulWidget {
-  const BacaanSholat({Key? key}) : super(key: key);
+class NiatSholat extends StatefulWidget {
+  const NiatSholat({Key? key}) : super(key: key);
 
   @override
-  BacaanSholatState createState() => BacaanSholatState();
+  NiatSholatState createState() => NiatSholatState();
 }
 
-class BacaanSholatState extends State<BacaanSholat> {
-  Future<List<ModelBacaan>> ReadJsonData() async {
+class NiatSholatState extends State<NiatSholat> {
+  Future<List<ModelNiat>> ReadJsonData() async {
     final jsondata =
-        await rootBundle.rootBundle.loadString('assets/data/bacaanshalat.json');
+        await rootBundle.rootBundle.loadString('assets/data/niatshalat.json');
     final list = json.decode(jsondata) as List<dynamic>;
-    return list.map((e) => ModelBacaan.fromJson(e)).toList();
+    return list.map((e) => ModelNiat.fromJson(e)).toList();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff0e1446),
+      backgroundColor: Color.fromARGB(255, 11, 20, 58),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -41,7 +41,16 @@ class BacaanSholatState extends State<BacaanSholat> {
                     margin: const EdgeInsets.only(top: 80),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: const Color(0xff44aca0)),
+                        color: Color.fromARGB(255, 90, 153, 172),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(255, 211, 216, 233)
+                                .withOpacity(0.5),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: Offset(0, 3),
+                          ),
+                        ]),
                     height: 200,
                     width: MediaQuery.of(context).size.width,
                     child: Container(
@@ -51,14 +60,14 @@ class BacaanSholatState extends State<BacaanSholat> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Bacaan Sholat",
+                              "Niat Sholat Wajib dan Sunnah",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Bacaan sholat dari doa Iftitah sampai Salam",
+                              "Bacaan niat sholat wajib 5 waktu dan sunnah",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -77,7 +86,7 @@ class BacaanSholatState extends State<BacaanSholat> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/bg_shalat.jpg",
+                      "assets/images/bg_niat.jpg",
                       width: 300,
                       height: 200,
                       fit: BoxFit.fitWidth,
@@ -94,7 +103,7 @@ class BacaanSholatState extends State<BacaanSholat> {
                   if (data.hasError) {
                     return Center(child: Text("${data.error}"));
                   } else if (data.hasData) {
-                    var items = data.data as List<ModelBacaan>;
+                    var items = data.data as List<ModelNiat>;
                     return ListView.builder(
                         itemCount: items == null ? 0 : items.length,
                         itemBuilder: (context, index) {

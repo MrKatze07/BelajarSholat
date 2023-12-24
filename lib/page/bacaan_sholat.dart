@@ -1,27 +1,27 @@
 import 'dart:convert';
-import 'package:belajarsholat/model/model_niat.dart';
+import 'package:belajarsholat/model/model_bacaan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
-class NiatSholat extends StatefulWidget {
-  const NiatSholat({Key? key}) : super(key: key);
+class BacaanSholat extends StatefulWidget {
+  const BacaanSholat({Key? key}) : super(key: key);
 
   @override
-  NiatSholatState createState() => NiatSholatState();
+  BacaanSholatState createState() => BacaanSholatState();
 }
 
-class NiatSholatState extends State<NiatSholat> {
-  Future<List<ModelNiat>> ReadJsonData() async {
+class BacaanSholatState extends State<BacaanSholat> {
+  Future<List<ModelBacaan>> ReadJsonData() async {
     final jsondata =
-        await rootBundle.rootBundle.loadString('assets/data/niatshalat.json');
+        await rootBundle.rootBundle.loadString('assets/data/bacaanshalat.json');
     final list = json.decode(jsondata) as List<dynamic>;
-    return list.map((e) => ModelNiat.fromJson(e)).toList();
+    return list.map((e) => ModelBacaan.fromJson(e)).toList();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown,
+      backgroundColor: const Color(0xff0e1446),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -32,7 +32,7 @@ class NiatSholatState extends State<NiatSholat> {
                   alignment: Alignment.topLeft,
                   child: IconButton(
                     onPressed: () => Navigator.of(context).pop(),
-                    icon: const Icon(Icons.arrow_back, color: Colors.black),
+                    icon: const Icon(Icons.arrow_back, color: Colors.white),
                   ),
                 ),
                 Align(
@@ -41,7 +41,16 @@ class NiatSholatState extends State<NiatSholat> {
                     margin: const EdgeInsets.only(top: 80),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Color.fromARGB(255, 90, 153, 172)),
+                        color: const Color(0xff44aca0),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromARGB(255, 144, 216, 182)
+                                .withOpacity(0.5),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: Offset(0, 3),
+                          ),
+                        ]),
                     height: 200,
                     width: MediaQuery.of(context).size.width,
                     child: Container(
@@ -51,14 +60,14 @@ class NiatSholatState extends State<NiatSholat> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Niat Sholat Wajib dan Sunnah",
+                              "Bacaan Sholat",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              "Bacaan niat sholat wajib 5 waktu dan sunnah",
+                              "Bacaan sholat dari doa Iftitah sampai Salam",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
@@ -77,7 +86,7 @@ class NiatSholatState extends State<NiatSholat> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/bg_doa.jpg",
+                      "assets/images/bg_shalat.jpg",
                       width: 300,
                       height: 200,
                       fit: BoxFit.fitWidth,
@@ -94,7 +103,7 @@ class NiatSholatState extends State<NiatSholat> {
                   if (data.hasError) {
                     return Center(child: Text("${data.error}"));
                   } else if (data.hasData) {
-                    var items = data.data as List<ModelNiat>;
+                    var items = data.data as List<ModelBacaan>;
                     return ListView.builder(
                         itemCount: items == null ? 0 : items.length,
                         itemBuilder: (context, index) {

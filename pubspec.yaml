@@ -62,13 +62,20 @@ flutter:
   assets:
     - assets/images/bg_alquran.jpg
     - assets/images/bg_doa.jpg
+    - assets/images/bg_niat.jpg
     - assets/images/bg_shalat.jpg
+    - assets/images/bg_dzikir.jpg
+    - assets/images/ic_dzikir.jpg
     - assets/images/ic_doa.jpg
     - assets/images/ic_niat.jpg
     - assets/images/sholat_splash.png
+    
+    
+
 
     - assets/data/bacaanshalat.json
     - assets/data/niatshalat.json
+    - assets/data/doa.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

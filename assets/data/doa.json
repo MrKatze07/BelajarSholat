@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Istighfar",
+      "arabic": "أَسْتَغْفِرُ اللهَ الْعَظِـيْمِ الَّذِيْ لَااِلَهَ اِلَّا هُوَ الْحَيُّ الْقَيُّوْمُ وَأَتُوْبُ إِلَيْهِ",
+      "latin": "Astghfirullah hal’adzim, alladzi laailaha illahuwal khayyul qoyyuumu wa atuubu ilaiih.",
+      "terjemahan": "Aku mohon ampun kepada Allah Yang Maha Besar, tidak ada tuhan melainkan Dia, yang Maha Hidup yang terus-menerus mengurus makhluk-Nya, dan saya bertobat kepada-Nya."
+    },
+    {
+      "id": 2,
+      "name": "Doa Keselamatan ",
+      "arabic": "للَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلَامُ، وَإِلَيْكَ يَعُوْدُ السَّلَامُ فَحَيِّنَارَبَّنَا بِالسَّلَامِ وَاَدْخِلْنَا الْـجَنَّةَ دَارَ السَّلَامِ تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ يَا ذَاالْـجَلَالِ وَاْلإِكْرَام.",
+      "latin": "Allahumma Antas-Salaam Wa Minkas-Salaam Wa Ilaika Ya Udus-Salam Fahayyina Rabbanaa Bis-Salaami Wa Adkhilnal-Jannata Daarus-Salaam Tabaarokta Robbanaa Wa Ta Alaika Ya Dzal-Jalali Wal Ikrom",
+      "terjemahan": "Ya Allah, engkau adalah zat yang mempunyai kesejahteraan dan dari padamulah kesejahteraan itu da kepadamulah akan kembali lagi segala kesejahteraan itu, maka hidupkanlah kami ya allah dengan sejahtera. dan masukkanlah kami kedalam surga kampung kesejahteraan, engkaulah yang kuasa memberi berkah yang banyak dan engkaulah yang maha tinggi, wahai dzat yang memiliki keagungan dan kemuliaan."
+    },
+    {
+
+      "id": 3,
+      "name": "Dzikir Pujian Kepada Allah",
+      "arabic": "سَمِعْتُ النبيَّ صَلَّى اللهُ عليه وسلَّمَ يقولُ خَلْفَ الصَّلَاةِ: لا إلَهَ إلَّا اللَّهُ وحْدَهُ لا شَرِيكَ له، اللَّهُمَّ لا مَانِعَ لِما أعْطَيْتَ، ولَا مُعْطِيَ لِما مَنَعْتَ، ولَا يَنْفَعُ ذَا الجَدِّ مِنْكَ الجَدُّ",
+      "latin": "laa ilaha illallooh wahdahu laa syarika lahu, lahul mulku wa lahul hamdu wa huwa ‘alaa kulli syai-in qodiir. Alloohumma laa maani’a lima a’thoyta wa laa mu’thiya limaa mana’ta wa laa yanfa’u dzal jaddi minkal jaddu",
+      "terjemahan": "Tiada ilah yang berhak disembah selain Allah semata, tidak ada sekutu bagi-Nya. Segala pujian dan kerajaan adalah milik Allah. Allah Maha Kuasa atas segala sesuatu. Ya Allah, tidak ada yang mencegah apa yang Engkau berikan dan tidak ada yang memberi apa yang Engkau cegah. Tidak berguna kekayaan dan kemuliaan (bagi pemiliknya). Dari Engkau-lah semua kekayaan dan kemuliaan"
+    },
+    {
+      "id": 4,
+      "name": "Tahmid,Tasbih, dan Takbir",
+      "arabic": "سُبْحَانَ اللهِ (۳۳×) اَلْحَمْدُ لِلَّهِ (۳۳×) اللهُ أَكْبَرُ (۳۳×)",
+      "latin": "Subhaanallah (33x). Alhamdulillah (33x). Allahu akbar (33x)",
+      "terjemahan": "Mahasuci Allah, (33x), Segala puji bagi Allah, (33x), Allah Mahabesar, (33x)"
+    },
+    {
+      "id": 5,
+      "name": "Ayat Kursi",
+      "arabic": "اَللّٰهُ لَآ اِلٰهَ اِلَّا هُوَۚ اَلْحَيُّ الْقَيُّوْمُ ەۚ لَا تَأْخُذُهٗ سِنَةٌ وَّلَا نَوْمٌۗ لَهٗ مَا فِى السَّمٰوٰتِ وَمَا فِى الْاَرْضِۗ مَنْ ذَا الَّذِيْ يَشْفَعُ عِنْدَهٗٓ اِلَّا بِاِذْنِهٖۗ يَعْلَمُ مَا بَيْنَ اَيْدِيْهِمْ وَمَا خَلْفَهُمْۚ وَلَا يُحِيْطُوْنَ بِشَيْءٍ مِّنْ عِلْمِهٖٓ اِلَّا بِمَا شَاۤءَۚ وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَالْاَرْضَۚ وَلَا يَـُٔوْدُهٗ حِفْظُهُمَاۚ وَهُوَ الْعَلِيُّ الْعَظِيْمُ",
+      "latin": "Allāhu lā ilāha illā huw, al-ḥayyul-qayyụm, lā ta`khużuhụ sinatuw wa lā na`ụm, lahụ mā fis-samāwāti wa mā fil-arḍ, man żallażī yasyfa'u 'indahū illā bi`iżnih, ya'lamu mā baina aidīhim wa mā khalfahum, wa lā yuḥīṭụna bisyai`im min 'ilmihī illā bimā syā`, wasi'a kursiyyuhus-samāwāti wal-arḍ, wa lā ya`ụduhụ ḥifẓuhumā, wa huwal-'aliyyul-'aẓīm",
+      "terjemahan": "Allah, tidak ada tuhan selain Dia, Yang Mahahidup lagi terus-menerus mengurus (makhluk-Nya). Dia tidak dilanda oleh kantuk dan tidak (pula) oleh tidur. Milik-Nyalah apa yang ada di langit dan apa yang ada di bumi. Tidak ada yang dapat memberi syafaat di sisi-Nya tanpa izin-Nya. Dia mengetahui apa yang ada di hadapan mereka dan apa yang ada di belakang mereka. Mereka tidak mengetahui sesuatu apa pun dari ilmu-Nya, kecuali apa yang Dia kehendaki. Kursi-Nya (ilmu dan kekuasaan-Nya) meliputi langit dan bumi. Dia tidak merasa berat memelihara keduanya. Dialah yang Mahatinggi lagi Maha agung."    
+    }
+  ]

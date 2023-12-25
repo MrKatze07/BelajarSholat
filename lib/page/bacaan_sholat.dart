@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
 class BacaanSholat extends StatefulWidget {
-  const BacaanSholat({Key? key}) : super(key: key);
+  const BacaanSholat({super.key});
 
   @override
   BacaanSholatState createState() => BacaanSholatState();

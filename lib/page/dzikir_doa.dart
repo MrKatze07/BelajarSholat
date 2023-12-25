@@ -22,7 +22,7 @@ class DzikirDoaState extends State<DzikirDoa> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/bg_dzikir.jpg'),
             fit: BoxFit.cover,

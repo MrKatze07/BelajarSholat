@@ -4,7 +4,7 @@ import 'package:belajarsholat/page/dzikir_doa.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
-  const MainPage({Key? key}) : super(key: key);
+  const MainPage({super.key});
 
   @override
   MainPageState createState() => MainPageState();
@@ -17,7 +17,7 @@ class MainPageState extends State<MainPage> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.lightGreen,
-        title: Text(
+        title: const Text(
           'Belajar Sholat',
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
         ),
@@ -28,7 +28,7 @@ class MainPageState extends State<MainPage> {
           Center(
             child: Container(
               margin: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.black,
               ),
               child: Card(
@@ -65,7 +65,7 @@ class MainPageState extends State<MainPage> {
           Center(
             child: Container(
               margin: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.black,
               ),
               child: Card(
@@ -103,7 +103,7 @@ class MainPageState extends State<MainPage> {
           Center(
             child: Container(
               margin: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.black,
               ),
               child: Card(

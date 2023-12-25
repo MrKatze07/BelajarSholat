@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
 class NiatSholat extends StatefulWidget {
-  const NiatSholat({Key? key}) : super(key: key);
+  const NiatSholat({super.key});
 
   @override
   NiatSholatState createState() => NiatSholatState();
